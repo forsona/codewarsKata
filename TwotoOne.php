@@ -1,5 +1,4 @@
 <?php
-
 /**
  * 【Two to One】：二合一
  */
@@ -21,11 +20,12 @@
  */
 function longest($a, $b)
 {
-    return implode('', array_intersect([
-        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-            ], array_unique(str_split($a . $b))));
+    return implode('',
+        array_intersect([
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+        'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+            ], array_unique(str_split($a.$b))));
 }
-
 /**
  * 我的思路：
  * 1、做完Mumbling这个题目的时候，我看了好多别人的代码，很多都是一句话搞定的，于是……我中毒了，所以才有了这样的答案
